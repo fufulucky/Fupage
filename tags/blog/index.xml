@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Yujie Fu</title>
-    <link>http://fyjhomepage.github.io/tags/blog/</link>
+    <link>http://Fupage.github.io/tags/blog/</link>
     <description>Recent content in Blog on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
     <lastBuildDate>Thu, 09 May 2019 14:16:43 +0800</lastBuildDate>
     
-	<atom:link href="http://fyjhomepage.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://Fupage.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TCP握手协议</title>
-      <link>http://fyjhomepage.github.io/post/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</link>
+      <link>http://Fupage.github.io/post/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</link>
       <pubDate>Thu, 09 May 2019 14:16:43 +0800</pubDate>
       
-      <guid>http://fyjhomepage.github.io/post/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</guid>
+      <guid>http://Fupage.github.io/post/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</guid>
       <description>.imges{ width:70%; heigh:70%; display:table-cell; text-align:center; } （1）三次握手 第一次握手：客户端发送syn包到服务器，等待服务器确认。 第二次握手：服务器收到syn包，确认客户端发送的SYN，同时自己发送一个包，即SYN和Ack包 第三次握手：客户端收到服务器的SYN+ack，向服务器发送确认包ack。完成三次握手 （2）四次握手 第一次挥手：主动关闭方发送一个FIN， 第二次挥手：被动方收到FIN包后，发送确认信号ack 第三次挥手：被动方发送FIN，用于关</description>
     </item>
     
     <item>
       <title>HTTP与HTTPS</title>
-      <link>http://fyjhomepage.github.io/post/%E7%AC%AC%E4%BA%8C/</link>
+      <link>http://Fupage.github.io/post/%E7%AC%AC%E4%BA%8C/</link>
       <pubDate>Thu, 09 May 2019 13:05:55 +0800</pubDate>
       
-      <guid>http://fyjhomepage.github.io/post/%E7%AC%AC%E4%BA%8C/</guid>
+      <guid>http://Fupage.github.io/post/%E7%AC%AC%E4%BA%8C/</guid>
       <description>1）HTTP和HTTPS的基本概念： HTTP：超文本传输协议，属于应用层的协议。 HTTPS：添加了加密及认证机制的HTTP。 2）HTTP与HTTPS的区别 HTTP为明文传播，不安全，端口80 HTTPS为密文传播，设计了SSL协议用于HTTP协议传输的数据进行加密。端口443 3）HTTPS的特点 需要ca证书 秘钥有两个，对称秘钥和非对称秘钥。 对称秘钥用来加密传输数据，非对称秘钥用于加密对称秘钥。 4）H</description>
     </item>
     
