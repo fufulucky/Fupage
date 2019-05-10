@@ -6,26 +6,35 @@
     <description>Recent content in 前端 on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Thu, 09 May 2019 14:16:43 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 10:18:34 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hugo笔记</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/hugo%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 10 May 2019 10:18:34 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/hugo%E7%AC%94%E8%AE%B0/</guid>
+      <description>h3{ color: lightseagreen; } .codes span{ color: burlywood; } #buzou{ list-style: none; } 利用hugo主题搭建个人主页并上传至github网站 需要做的前期准备 下载好的hugo Git工具 首先，选择好theme后，可以看它对应的使用指南，创建网站。 经常用到的指令： Hugo server %运行 Hugo new XXX.md %XXX可以是中英文 接下来，将搭建好的网站上传至github 第一步：在github中建立新的库。注意，命名必须为xxxxx.github.io 第二步：在本地克隆这个库，使用指令git clone 第三</description>
+    </item>
+    
+    <item>
       <title>TCP握手协议</title>
-      <link>https://fufulucky.github.io/Fupage.github.io/post/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</link>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</link>
       <pubDate>Thu, 09 May 2019 14:16:43 +0800</pubDate>
       
-      <guid>https://fufulucky.github.io/Fupage.github.io/post/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</guid>
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/</guid>
       <description>.imges{ width:70%; heigh:70%; display:table-cell; text-align:center; } （1）三次握手 第一次握手：客户端发送syn包到服务器，等待服务器确认。 第二次握手：服务器收到syn包，确认客户端发送的SYN，同时自己发送一个包，即SYN和Ack包 第三次握手：客户端收到服务器的SYN+ack，向服务器发送确认包ack。完成三次握手 （2）四次握手 第一次挥手：主动关闭方发送一个FIN， 第二次挥手：被动方收到FIN包后，发送确认信号ack 第三次挥手：被动方发送FIN，用于关</description>
     </item>
     
     <item>
       <title>HTTP与HTTPS</title>
-      <link>https://fufulucky.github.io/Fupage.github.io/post/%E7%AC%AC%E4%BA%8C/</link>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/http%E4%B8%8Ehttps/</link>
       <pubDate>Thu, 09 May 2019 13:05:55 +0800</pubDate>
       
-      <guid>https://fufulucky.github.io/Fupage.github.io/post/%E7%AC%AC%E4%BA%8C/</guid>
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/http%E4%B8%8Ehttps/</guid>
       <description>1）HTTP和HTTPS的基本概念： HTTP：超文本传输协议，属于应用层的协议。 HTTPS：添加了加密及认证机制的HTTP。 2）HTTP与HTTPS的区别 HTTP为明文传播，不安全，端口80 HTTPS为密文传播，设计了SSL协议用于HTTP协议传输的数据进行加密。端口443 3）HTTPS的特点 需要ca证书 秘钥有两个，对称秘钥和非对称秘钥。 对称秘钥用来加密传输数据，非对称秘钥用于加密对称秘钥。 4）H</description>
     </item>
     

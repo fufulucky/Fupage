@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Yujie Fu</title>
+    <link>https://fufulucky.github.io/Fupage.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Yujie Fu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Fri, 10 May 2019 10:18:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://fufulucky.github.io/Fupage.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo笔记</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/hugo%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 10 May 2019 10:18:34 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/hugo%E7%AC%94%E8%AE%B0/</guid>
+      <description>h3{ color: lightseagreen; } .codes span{ color: burlywood; } #buzou{ list-style: none; } 利用hugo主题搭建个人主页并上传至github网站 需要做的前期准备 下载好的hugo Git工具 首先，选择好theme后，可以看它对应的使用指南，创建网站。 经常用到的指令： Hugo server %运行 Hugo new XXX.md %XXX可以是中英文 接下来，将搭建好的网站上传至github 第一步：在github中建立新的库。注意，命名必须为xxxxx.github.io 第二步：在本地克隆这个库，使用指令git clone 第三</description>
+    </item>
+    
+  </channel>
+</rss>

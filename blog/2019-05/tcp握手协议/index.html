@@ -7,23 +7,23 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="Yujie Fu">
-  <meta name="description" content="[Always keep the faith Love the wonderful world. Do the right things and be a better man.]">
+  <meta name="description" content=".imges{ width:70%; heigh:70%; display:table-cell; text-align:center; } （1）三次握手 第一次握手：客户端发送syn包到服务器，等待服务器确认。 第二次握手：服务器收到syn包，确认客户端发送的SYN，同时自己发送一个包，即SYN和Ack包 第三次握手：客户端收到服务器的SYN&#43;ack，向服务器发送确认包ack。完成三次握手 （2）四次握手 第一次挥手：主动关闭方发送一个FIN， 第二次挥手：被动方收到FIN包后，发送确认信号ack 第三次挥手：被动方发送FIN，用于关">
   
-  <meta property="og:title" content="Paper" />
-<meta property="og:description" content="[Always keep the faith Love the wonderful world. Do the right things and be a better man.]" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://fufulucky.github.io/Fupage.github.io/tags/paper/" />
-
-<meta property="og:updated_time" content="2019-05-09T14:40:04&#43;08:00"/>
+  <meta property="og:title" content="TCP握手协议" />
+<meta property="og:description" content=".imges{ width:70%; heigh:70%; display:table-cell; text-align:center; } （1）三次握手 第一次握手：客户端发送syn包到服务器，等待服务器确认。 第二次握手：服务器收到syn包，确认客户端发送的SYN，同时自己发送一个包，即SYN和Ack包 第三次握手：客户端收到服务器的SYN&#43;ack，向服务器发送确认包ack。完成三次握手 （2）四次握手 第一次挥手：主动关闭方发送一个FIN， 第二次挥手：被动方收到FIN包后，发送确认信号ack 第三次挥手：被动方发送FIN，用于关" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/" />
+<meta property="article:published_time" content="2019-05-09T14:16:43&#43;08:00"/>
+<meta property="article:modified_time" content="2019-05-09T14:16:43&#43;08:00"/>
 
 
   <title>
   
-       Paper | Yujie Fu 
+       TCP握手协议 | Yujie Fu 
   
   </title>
 
-  <link rel="canonical" href="https://fufulucky.github.io/Fupage.github.io/tags/paper/">
+  <link rel="canonical" href="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/tcp%E6%8F%A1%E6%89%8B%E5%8D%8F%E8%AE%AE/">
 
   
   
@@ -51,8 +51,6 @@
 
 
   
-  
-  <link href="https://fufulucky.github.io/Fupage.github.io/tags/paper/index.xml" rel="alternate" type="application/rss+xml" title="Yujie Fu" />
   
 
   <style type="text/css">
@@ -252,8 +250,6 @@
             
     
             
-                <a href="https://fufulucky.github.io/Fupage.github.io/tags/paper/index.xml"><i class="fas fa-rss pr-1" aria-hidden="true"></i></a>
-            
 
             
         </div>
@@ -271,159 +267,139 @@
     
 
     
-<main class="post-main-wrapper px-5">
   
-  <div class="row">
+  <main class="post-main-wrapper">
     
-    <div class="col-md-3">
-      
-      
-      
-
-  
-
-
-
-
-
-  <hr>
-  
-    <div class="post-meta">
-      <div class="mb-2">
-        <a href="https://fufulucky.github.io/Fupage.github.io/categories/">
-          <span class="font-weight-bold text-uppercase post-meta">
-            <i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 
-            Categories
-          </span>
-        </a>
-      </div>
-
-      <div class="li-x post-meta" style="margin-left: -8px;">
-        
-          
-          
-            
-            <li class="py-1">
-              <a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF">
-                <span>前端 (3)</span>
-              </a>
-            </li>           
-          
-            
-              <li class="middot"></li>
-            
-            <li class="py-1">
-              <a href="https://fufulucky.github.io/Fupage.github.io/categories/%E7%A7%91%E7%A0%94">
-                <span>科研 (1)</span>
-              </a>
-            </li>           
-          
-        
-      </div>
-    </div>
-
     
-  
-
-
-      
-      
-
-  
-
-
-
-
-
-  <hr>
-  
-    <div class="post-meta">
-      <div class="mb-2">
-        <a href="https://fufulucky.github.io/Fupage.github.io/tags/">
-          <span class="font-weight-bold text-uppercase post-meta">
-            <i class="fas fa-tags pr-1" aria-hidden="true"></i> 
-            Featured Tags
-          </span>
-        </a>
-      </div>
-
-      <div class="li-x post-meta tags-md" style="margin-left: -8px;">
-        
-        
-        
-            <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/paper" role="button"><span>paper (1)</span></a></li>
-          
-        
-            <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/sci" role="button"><span>sci (1)</span></a></li>
-          
-        
-      </div>
-    </div>
-
-    
-  
-
+    <div class="row">
 
       
 
+      
+      <div class="container pr-5">
+      
 
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
 
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 前端 </a></li>
+      
+    
+    
+  </ul>
 
+  <div class="px-4 post-heading">TCP握手协议</div>
 
-
-  
-
-    </div>
+  <ul class="post-meta li-x mt-1">
+    
+      <li>May 9, 2019</li>
     
 
     
+      <li class="middot"></li>
+      <li>One minute read</li>
     
-    <div class="col-md-9 mt-3">
-      <ul>
-        <div class="div-x">
-            <div class='post-heading'>
+  </ul>
   
-      Paper
-  
+
 </div>
 
-            
-            
-              <div class="px-2 middot"></div>
-              <div>
-                One post
-              </div>
-            
-          </div>
-      
-          
-      </ul>
-      <ul>
-        
-            
-        
-        
-            
-                <li class="post-item no-bullet">
-                    <span class="date">2019.5</span>
-                </li>
-                
-                    <li class="post-item">
-    
-    <span class="meta"><time datetime='2019-05-09T14:40:04&#43;08:00'>May 9, 2019</time></span>
-    
-    <a href="https://fufulucky.github.io/Fupage.github.io/paper/%E7%AC%AC%E4%B8%80%E7%AF%87paper/"><span>Effective Reversible Data Hiding in Encrypted Image with Adaptive Encoding Strategy</span></a>
-</li>
 
-                
+          <div class="post-content markdown">
+            <p><style type="text/css">
+.imges{
+width:70%;
+heigh:70%;
+display:table-cell;
+text-align:center;</p>
+
+<p>}
+</style>
+<div class="imges">
+<img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-05-09/p2-1.jpg"></div>
+<h5>（1）三次握手</h5>
+第一次握手：客户端发送syn包到服务器，等待服务器确认。</br>
+第二次握手：服务器收到syn包，确认客户端发送的SYN，同时自己发送一个包，即SYN和Ack包</br>
+第三次握手：客户端收到服务器的SYN+ack，向服务器发送确认包ack。完成三次握手</br>
+<h5>（2）四次握手</h5>
+第一次挥手：主动关闭方发送一个FIN，</br>
+第二次挥手：被动方收到FIN包后，发送确认信号ack</br>
+第三次挥手：被动方发送FIN，用于关闭被动方到主动方的数据传送</br>
+第四次挥手：主动方收到FIN后，发送Ack信号给被动方。完成四次挥手</br></p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
             
-        
-      </ul>
-    </div>
+              <div class="mb-5">
+                
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://fufulucky.github.io/Fupage.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
     
+      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/http" role="button">http </a></li>
+      
+    
+      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button">blog </a></li>
+      
     
   </div>
-</main> 
+</div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://fufulucky.github.io/Fupage.github.io/blog/2019-05/http%E4%B8%8Ehttps/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>HTTP与HTTPS</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+                <a href=https://fufulucky.github.io/Fupage.github.io/blog/2019-05/hugo%E7%AC%94%E8%AE%B0/ class="post-meta">Next
+                  <div class="pt-2 pb-5 flex-reverse">
+                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
+                    <span>Hugo笔记</span>
+                  </div>
+                </a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
 
     
     
@@ -465,8 +441,6 @@
         <a href="mailto:tvxq6021995@163.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
     
 
-    
-        <a href="https://fufulucky.github.io/Fupage.github.io/tags/paper/index.xml"><i class="fas fa-rss mr-3" aria-hidden="true"></i></a>
     
 
     
