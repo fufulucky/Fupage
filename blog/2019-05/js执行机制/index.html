@@ -7,23 +7,23 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="Yujie Fu">
-  <meta name="description" content="[Always keep the faith Love the wonderful world. Do the right things and be a better man.]">
+  <meta name="description" content="JavaScript 执行机制 JavaScript是一种单线程语言。Js任务可以分为同步任务和异步任务。当我们打开网站时，网页的渲染过程就是一大堆同步任务，比如页面骨架和页面元素的渲染。而像加载图片音乐之类占用资源大耗时久的任务，就是异步任务。 同步和异步任务分别进入不同的执行&rdquo;场所&rdquo;，同步的进入主线程，异步的进入Event Table并注册函数。 当指定的事情完成时，Event Table会将这个函">
   
-  <meta property="og:title" content="Blogs" />
-<meta property="og:description" content="[Always keep the faith Love the wonderful world. Do the right things and be a better man.]" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://fufulucky.github.io/Fupage.github.io/blog/" />
-
-<meta property="og:updated_time" content="2019-05-15T10:18:34&#43;08:00"/>
+  <meta property="og:title" content="JS执行机制" />
+<meta property="og:description" content="JavaScript 执行机制 JavaScript是一种单线程语言。Js任务可以分为同步任务和异步任务。当我们打开网站时，网页的渲染过程就是一大堆同步任务，比如页面骨架和页面元素的渲染。而像加载图片音乐之类占用资源大耗时久的任务，就是异步任务。 同步和异步任务分别进入不同的执行&rdquo;场所&rdquo;，同步的进入主线程，异步的进入Event Table并注册函数。 当指定的事情完成时，Event Table会将这个函" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/" />
+<meta property="article:published_time" content="2019-05-15T10:18:34&#43;08:00"/>
+<meta property="article:modified_time" content="2019-05-15T10:18:34&#43;08:00"/>
 
 
   <title>
   
-       Blogs | Yujie Fu 
+       JS执行机制 | Yujie Fu 
   
   </title>
 
-  <link rel="canonical" href="https://fufulucky.github.io/Fupage.github.io/blog/">
+  <link rel="canonical" href="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/">
 
   
   
@@ -51,8 +51,6 @@
 
 
   
-  
-  <link href="https://fufulucky.github.io/Fupage.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Yujie Fu" />
   
 
   <style type="text/css">
@@ -252,8 +250,6 @@
             
     
             
-                <a href="https://fufulucky.github.io/Fupage.github.io/blog/index.xml"><i class="fas fa-rss pr-1" aria-hidden="true"></i></a>
-            
 
             
         </div>
@@ -271,380 +267,173 @@
     
 
     
-  <main class="post-main-wrapper px-5">
+  
+  <main class="post-main-wrapper">
+    
     
     <div class="row">
 
       
+
       
-        
-        <div class="col-md-3">
-          
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
-  <hr>
-  
-    <div class="post-meta">
-      <div class="mb-2">
-        <a href="https://fufulucky.github.io/Fupage.github.io/categories/">
-          <span class="font-weight-bold text-uppercase post-meta">
-            <i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 
-            Categories
-          </span>
-        </a>
-      </div>
-
-      <div class="li-x post-meta" style="margin-left: -8px;">
-        
-          
-          
-            
-            <li class="py-1">
-              <a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF">
-                <span>前端 (5)</span>
-              </a>
-            </li>           
-          
-        
-      </div>
-    </div>
-
-    
-  
-
-    
-          
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
-  <hr>
-  
-    <div class="post-meta">
-      <div class="mb-2">
-        <a href="https://fufulucky.github.io/Fupage.github.io/tags/">
-          <span class="font-weight-bold text-uppercase post-meta">
-            <i class="fas fa-tags pr-1" aria-hidden="true"></i> 
-            Featured Tags
-          </span>
-        </a>
-      </div>
-
-      <div class="li-x post-meta tags-md" style="margin-left: -8px;">
-        
-        
-        
-            <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button"><span>blog (5)</span></a></li>
-          
-        
-            <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/http" role="button"><span>http (5)</span></a></li>
-          
-        
-            <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/hugo" role="button"><span>hugo (3)</span></a></li>
-          
-        
-      </div>
-    </div>
-
-    
-  
-
-          
-
-
-
-
-
-
-  
-        </div>
-        
-
-        
-        
-        <div class="col-md-9 mt-3">  
+      <div class="container pr-5">
       
-          <ul>
-            <div class="div-x">
-              <div class='post-heading'>
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+      
+        <li><a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 前端 </a></li>
+      
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">JS执行机制</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>May 15, 2019</li>
+    
+
+    
+      <li class="middot"></li>
+      <li>3 minutes read</li>
+    
+  </ul>
   
-      Blogs
-  
+
 </div>
 
-              
-              
-                <div class="px-2 middot"></div>
-                <div>
-                  5 posts
-                </div>
-              
-            </div>
 
-              
+          <div class="post-content markdown">
+            <p><h3>JavaScript 执行机制</h3>
+<div>
+    <p>JavaScript是一种单线程语言。Js任务可以分为<b>同步任务</b>和<b>异步任务</b>。当我们打开网站时，网页的渲染过程就是一大堆同步任务，比如页面骨架和页面元素的渲染。而像加载图片音乐之类占用资源大耗时久的任务，就是异步任务。</p>
+    <img class="codes" src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-05-15/1.png">
+    <p>同步和异步任务分别进入不同的执行&rdquo;场所&rdquo;，同步的进入主线程，异步的进入Event Table并注册函数。</p>
+    <p>当指定的事情完成时，Event Table会将这个函数移入Event Queue。<br/>
+    主线程内的任务执行完毕为空，会去Event Queue读取对应的函数，进入主线程执行。<br/>
+    上述过程会不断重复，也就是常说的Event Loop(事件循环)。<br/>
+        <b>setTimeout</b>和<b>setInterval</b>函数是一个典型的异步函数。setInterval会每隔指定的时间将注册的函数置入Event Queue，如果前面的任务耗时太久，那么同样需要等待。
+    </p>
+    <div>
+        <p>我们进入正题，除了广义的同步任务和异步任务，我们对任务有更精细的定义：</p>
+        <ul>
+            <li>macro-task(宏任务)：包括整体代码script，setTimeout，setInterval</li>
+            <li>micro-task(微任务)：Promise，process.nextTick</li>
         </ul>
-        <div>
-          <div class="pagination pagination-outline justify-content-end active-color">
-            
-            
+        <p>不同类型的任务会进入对应的Event Queue，比如setTimeout和setInterval会进入相同的Event Queue。</p>
+    </div>
+    <div>
+        <p>来分析一段较复杂的代码，看看你是否真的掌握了js的执行机制：</p>
+        <div class="codes">
+       <img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-05-15/3.png">
+        </div>
+        <p>复制代码第一轮事件循环流程分析如下：</p>
+        <ul>
+            <li>整体script作为第一个宏任务进入主线程，遇到console.log，输出1。</li>
+            <li>遇到setTimeout，其回调函数被分发到宏任务Event Queue中。我们暂且记为setTimeout1。</li>
+            <li>遇到process.nextTick()，其回调函数被分发到微任务Event Queue中。我们记为process1。</li>
+            <li>遇到Promise，new Promise直接执行，输出7。then被分发到微任务Event Queue中。我们记为then1。</li>
+            <li>又遇到了setTimeout，其回调函数被分发到宏任务Event Queue中，我们记为setTimeout2。</li>
+        </ul>
+        <img class="codes" src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-05-15/2.jpg">
+        <p>上表是第一轮事件循环宏任务结束时各Event Queue的情况，此时已经输出了1和7。<br/>
+            我们发现了process1和then1两个微任务。<br/>
+            执行process1,输出6。<br/>
+            执行then1，输出8。<br/>
+            好了，第一轮事件循环正式结束，这一轮的结果是输出1，7，6，8。那么第二轮时间循环从setTimeout1宏任务开始：<br/>
+            整段代码，共进行了三次事件循环，完整的输出为1，7，6，8，2，4，3，5，9，11，10，12。(请注意，node环境下的事件监听依赖libuv与前端环境不完全相同，输出顺序可能会有误差)
+        </p>
+    </div></p>
 
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="https://fufulucky.github.io/Fupage.github.io/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item disabled">
-    <a href="" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="https://fufulucky.github.io/Fupage.github.io/blog/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="https://fufulucky.github.io/Fupage.github.io/blog/page/2/">2</a></li>
-    
-    
-    <li class="page-item">
-    <a href="https://fufulucky.github.io/Fupage.github.io/blog/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="https://fufulucky.github.io/Fupage.github.io/blog/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
+<p></div>
+<div id="zhuanzai">
+    作者：ssssyoki<br/>
+    链接：<a href="https://juejin.im/post/59e85eebf265da430d571f89">https://juejin.im/post/59e85eebf265da430d571f89</a><br/>
+    来源：掘金<br/>
+    著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+</div>
+<style type="text/css">
+    #zhuanzai{
+        font-size: 10px;
+        color: darkslategrey;
+    }
+   .codes{
+width:50%;
+height:50%;
+}
+</style></p>
 
           </div>
 
           
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">JS执行机制</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>May 15, 2019</li>
-        
-    
-        
-          <li class="middot"></li>
-          <li>3 minutes read</li>
-        
-      </ul>
-    </div>
-    
-
-    
-      JavaScript 执行机制 JavaScript是一种单线程语言。Js任务可以分为同步任务和异步任务。当我们打开网站时，网页的渲染过程就是一大堆同步任务，比如页面骨架和页面元素的渲染。而像加载图片音乐之类占用资源大耗时久的任务，就是异步任务。 同步和异步任务分别进入不同的执行”场所”，同步的进入主线程，异步的进入Event Table并注册函数。 当指定的事情完成时，Event Table会将这个函......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-        
-          <li><a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 前端 </a></li>
-        
-      
-      
-    </div>
-   
-    <div>
-      
-        
-<div class="li-x div-x post-meta">
-  <li class="pr-0"><a href="https://fufulucky.github.io/Fupage.github.io/tags/"><i class="fas fa-tags"></i></a></li>
-  <div class="tags-sm">
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/hugo" role="button">hugo </a></li>
-      
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button">blog </a></li>
-      
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/http" role="button">http </a></li>
-      
-    
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">网络模型</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>May 13, 2019</li>
-        
-    
-        
-          <li class="middot"></li>
-          <li>One minute read</li>
-        
-      </ul>
-    </div>
-    
-
-    
-      OSI参考模型与TCP/IP四层模型 TCP/IP为四层，分别为应用层，传输层，网际层和网络接口，是实际应用的 OSI为七层，分别为应用层，表示层，会话层，传输层，网络层，数据链路层和物理层。是一种理想条件下的网络模型 TCP和UDP的区别 TCP和UDP都位于传输层，提供一种端到端的服务。 TCP是传输控制协议，是一种可靠地，面向连接的协议。允许两台主机之间无差错的传输。TCP协议还可以进行流量控制，避免......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-        
-          <li><a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 前端 </a></li>
-        
-      
-      
-    </div>
-   
-    <div>
-      
-        
-<div class="li-x div-x post-meta">
-  <li class="pr-0"><a href="https://fufulucky.github.io/Fupage.github.io/tags/"><i class="fas fa-tags"></i></a></li>
-  <div class="tags-sm">
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/hugo" role="button">hugo </a></li>
-      
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button">blog </a></li>
-      
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/http" role="button">http </a></li>
-      
-    
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://fufulucky.github.io/Fupage.github.io/blog/2019-05/hugo%E7%AC%94%E8%AE%B0/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Hugo笔记</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>May 10, 2019</li>
-        
-    
-        
-          <li class="middot"></li>
-          <li>One minute read</li>
-        
-      </ul>
-    </div>
-    
-
-    
-      h3{ color: lightseagreen; } .codes span{ color: burlywood; } #buzou{ list-style: none; } 利用hugo主题搭建个人主页并上传至github网站 需要做的前期准备 下载好的hugo Git工具 首先，选择好theme后，可以看它对应的使用指南，创建网站。 经常用到的指令： Hugo server %运行 Hugo new XXX.md %XXX可以是中英文 接下来，将搭建好的网站上传至github 第一步：在github中建立新的库。注意，命名必须为xxxxx.github.io 第二步：在本地克隆这个库，使用指令git clone 第三......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-        
-          <li><a href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF"><i class="fas fa-folder-open pr-1" aria-hidden="true"></i> 前端 </a></li>
-        
-      
-      
-    </div>
-   
-    <div>
-      
-        
-<div class="li-x div-x post-meta">
-  <li class="pr-0"><a href="https://fufulucky.github.io/Fupage.github.io/tags/"><i class="fas fa-tags"></i></a></li>
-  <div class="tags-sm">
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/hugo" role="button">hugo </a></li>
-      
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button">blog </a></li>
-      
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/http" role="button">http </a></li>
-      
-    
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
+          <div class="row">
+            <div class="col-md-8">
             
+              <div class="mb-5">
+                
+<div class="li-x div-x post-meta">
+  <li class="pr-0"><a href="https://fufulucky.github.io/Fupage.github.io/tags/"><i class="fas fa-tags"></i></a></li>
+  <div class="tags-sm">
+    
+      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/hugo" role="button">hugo </a></li>
+      
+    
+      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button">blog </a></li>
+      
+    
+      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/http" role="button">http </a></li>
+      
+    
+  </div>
+</div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://fufulucky.github.io/Fupage.github.io/blog/2019-05/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>网络模型</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
         </div>
+        
+
       </div>
       
 
+      
+
     </div>
+    
+
+
   </main>
+  
+
 
     
     
@@ -686,8 +475,6 @@
         <a href="mailto:tvxq6021995@163.com"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
     
 
-    
-        <a href="https://fufulucky.github.io/Fupage.github.io/blog/index.xml"><i class="fas fa-rss mr-3" aria-hidden="true"></i></a>
     
 
     

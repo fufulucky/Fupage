@@ -6,10 +6,28 @@
     <description>Recent content in Blogs on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Fri, 10 May 2019 10:18:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 10:18:34 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS执行机制</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Wed, 15 May 2019 10:18:34 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/</guid>
+      <description>JavaScript 执行机制 JavaScript是一种单线程语言。Js任务可以分为同步任务和异步任务。当我们打开网站时，网页的渲染过程就是一大堆同步任务，比如页面骨架和页面元素的渲染。而像加载图片音乐之类占用资源大耗时久的任务，就是异步任务。 同步和异步任务分别进入不同的执行&amp;rdquo;场所&amp;rdquo;，同步的进入主线程，异步的进入Event Table并注册函数。 当指定的事情完成时，Event Table会将这个函</description>
+    </item>
+    
+    <item>
+      <title>网络模型</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 13 May 2019 11:42:08 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/</guid>
+      <description>OSI参考模型与TCP/IP四层模型 TCP/IP为四层，分别为应用层，传输层，网际层和网络接口，是实际应用的 OSI为七层，分别为应用层，表示层，会话层，传输层，网络层，数据链路层和物理层。是一种理想条件下的网络模型 TCP和UDP的区别 TCP和UDP都位于传输层，提供一种端到端的服务。 TCP是传输控制协议，是一种可靠地，面向连接的协议。允许两台主机之间无差错的传输。TCP协议还可以进行流量控制，避免</description>
+    </item>
     
     <item>
       <title>Hugo笔记</title>
