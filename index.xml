@@ -6,10 +6,19 @@
     <description>Recent content on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Wed, 15 May 2019 10:18:34 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2019 23:05:28 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Null，Undefined和NaN的区别</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/nullundefined%E5%92%8Cnan%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 21 May 2019 23:05:28 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/nullundefined%E5%92%8Cnan%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>Undefined：当声明了一个变量，但没有进行赋值，那么就是undefined。undefined对应类型undefined，布尔型false，字符串undefined，数字计算结果一定是NaN。 Null：代表“空值”，是一个空对象指针。null对应类型object，布尔值false，数字0，字符串“null”。Typeof null 为 object 什么情况下会返回null document.getElementBy</description>
+    </item>
     
     <item>
       <title>JS执行机制</title>
