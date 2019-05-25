@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 21 May 2019 23:05:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2019 22:36:32 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Js函数</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sat, 25 May 2019 22:36:32 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/js%E5%87%BD%E6%95%B0/</guid>
+      <description>JS中，创建函数有三种方法，分别为函数声明和函数表达式，还有Function构造函数（不常见) 函数声明：function XXX（）{……} 函数表达式： var express=function(a1,b1){} ——匿名函数表达式 调用：express(a1,b1) var express=function exps(a1,b1){} ——函数表达式 正确调用 express(a1,b1) 错误调用 exps(a1,b1)，但在函数内部可以调用 解释器在解析JavaScript代码时对于这两种方式并不是一视同仁的。解释器会首先读取函数声明，并使其在执行任何</description>
+    </item>
     
     <item>
       <title>Null，Undefined和NaN的区别</title>
