@@ -6,10 +6,19 @@
     <description>Recent content on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Sat, 25 May 2019 22:36:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2019 22:29:43 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue Computed和methods</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/vue-computed%E5%92%8Cmethods/</link>
+      <pubDate>Mon, 27 May 2019 22:29:43 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-05/vue-computed%E5%92%8Cmethods/</guid>
+      <description>Vue中computed与methods的区别 computed一个属性，又别的现有属性计算而来 &amp;lt;p&amp;gt;&amp;lt;b&amp;gt;methods&amp;lt;/b&amp;gt;: 就是指函数&amp;lt;/p&amp;gt; 具体来说： computed： computed定义的方法我们是以属性访问的形式调用的，{{computedTest}}，有缓存机制。当computed涉及到变量改变时，computed才会调用 methods 但是methods定义的方法，我们必须要加上()来调用，如{{methodTest</description>
+    </item>
     
     <item>
       <title>Js函数</title>
