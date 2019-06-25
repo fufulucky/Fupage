@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on Yujie Fu</title>
+    <link>https://fufulucky.github.io/Fupage.github.io/tags/js/</link>
+    <description>Recent content in Js on Yujie Fu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Tue, 25 Jun 2019 18:11:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://fufulucky.github.io/Fupage.github.io/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ES6新特性</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-06/es6%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Tue, 25 Jun 2019 18:11:20 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-06/es6%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description>ES6新特性（自己遇到的一些） 1. 使用let而不是var，避免变量覆盖问题，常量const,变量let常量。 Const很神奇，const定义的对象，当对象改变了之后，const定义的值也会跟着改变。cosnt定义的变量是一个对象的一个属性值，但是当对象属性值改变了以后，const定义的这个值并不会改变。 一句话总结，const定义的对象可以通过改变其属性值的方法，对它进行改变。而const定义的常量是</description>
+    </item>
+    
+  </channel>
+</rss>
