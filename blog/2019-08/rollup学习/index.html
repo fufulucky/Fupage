@@ -7,23 +7,23 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="Yujie Fu">
-  <meta name="description" content="ES6新特性（自己遇到的一些） 1. 使用let而不是var，避免变量覆盖问题，常量const,变量let常量。 Const很神奇，const定义的对象，当对象改变了之后，const定义的值也会跟着改变。cosnt定义的变量是一个对象的一个属性值，但是当对象属性值改变了以后，const定义的这个值并不会改变。 一句话总结，const定义的对象可以通过改变其属性值的方法，对它进行改变。而const定义的常量是">
+  <meta name="description" content="h3{ color: lightseagreen; } .codes span{ color: burlywood; } Rollup.js学习（一） 一、什么是Rollup.js Rollup.js是JavaScript的模块打包器，像是vue和react等框架都是通过rollup.js进行打包的。 二、第一个Rollup.js应用 1.安装rollup.js 全局安装：npm install rollup –global 2.创建一个简单的项目 首先来创建目录：mkdir src //在当前目录下创建src文件夹，接下来在src文件夹内创建一个">
   
-  <meta property="og:title" content="ES6新特性" />
-<meta property="og:description" content="ES6新特性（自己遇到的一些） 1. 使用let而不是var，避免变量覆盖问题，常量const,变量let常量。 Const很神奇，const定义的对象，当对象改变了之后，const定义的值也会跟着改变。cosnt定义的变量是一个对象的一个属性值，但是当对象属性值改变了以后，const定义的这个值并不会改变。 一句话总结，const定义的对象可以通过改变其属性值的方法，对它进行改变。而const定义的常量是" />
+  <meta property="og:title" content="Rollup学习" />
+<meta property="og:description" content="h3{ color: lightseagreen; } .codes span{ color: burlywood; } Rollup.js学习（一） 一、什么是Rollup.js Rollup.js是JavaScript的模块打包器，像是vue和react等框架都是通过rollup.js进行打包的。 二、第一个Rollup.js应用 1.安装rollup.js 全局安装：npm install rollup –global 2.创建一个简单的项目 首先来创建目录：mkdir src //在当前目录下创建src文件夹，接下来在src文件夹内创建一个" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://fufulucky.github.io/Fupage.github.io/blog/2019-06/es6%E6%96%B0%E7%89%B9%E6%80%A7/" />
-<meta property="article:published_time" content="2019-06-25T18:11:20&#43;08:00"/>
-<meta property="article:modified_time" content="2019-06-25T18:11:20&#43;08:00"/>
+<meta property="og:url" content="https://fufulucky.github.io/Fupage.github.io/blog/2019-08/rollup%E5%AD%A6%E4%B9%A0/" />
+<meta property="article:published_time" content="2019-08-13T23:14:59&#43;08:00"/>
+<meta property="article:modified_time" content="2019-08-13T23:14:59&#43;08:00"/>
 
 
   <title>
   
-       ES6新特性 | Yujie Fu 
+       Rollup学习 | Yujie Fu 
   
   </title>
 
-  <link rel="canonical" href="https://fufulucky.github.io/Fupage.github.io/blog/2019-06/es6%E6%96%B0%E7%89%B9%E6%80%A7/">
+  <link rel="canonical" href="https://fufulucky.github.io/Fupage.github.io/blog/2019-08/rollup%E5%AD%A6%E4%B9%A0/">
 
   
   
@@ -292,16 +292,16 @@
     
   </ul>
 
-  <div class="px-4 post-heading">ES6新特性</div>
+  <div class="px-4 post-heading">Rollup学习</div>
 
   <ul class="post-meta li-x mt-1">
     
-      <li>Jun 25, 2019</li>
+      <li>Aug 13, 2019</li>
     
 
     
       <li class="middot"></li>
-      <li>One minute read</li>
+      <li>4 minutes read</li>
     
   </ul>
   
@@ -310,12 +310,161 @@
 
 
           <div class="post-content markdown">
-            <p><h3>ES6新特性</h3>（自己遇到的一些）
-<p>1. 使用let而不是var，避免变量覆盖问题，常量const,变量let常量。
-Const很神奇，const定义的对象，当对象改变了之后，const定义的值也会跟着改变。cosnt定义的变量是一个对象的一个属性值，但是当对象属性值改变了以后，const定义的这个值并不会改变。
-一句话总结，const定义的对象可以通过改变其属性值的方法，对它进行改变。而const定义的常量是不能被改变的。
-</p><p>2. 箭头函数来简化书写</p>
-<p>3. 增添了class</p></p>
+            <p><style type="text/css">
+    h3{
+        color: lightseagreen;
+    }
+    .codes span{
+        color: burlywood;
+    }
+</style>
+<h3>Rollup.js学习（一）</h3>
+<div>一、什么是Rollup.js</div>
+<p>Rollup.js是JavaScript的模块打包器，像是vue和react等框架都是通过rollup.js进行打包的。</p>
+<div>二、第一个Rollup.js应用</div>
+<p>1.安装rollup.js</p>
+<p>全局安装：npm install rollup –global</p>
+<p>2.创建一个简单的项目</p>
+<p>首先来创建目录：mkdir src //在当前目录下创建src文件夹，接下来在src文件夹内创建一个main.js的文件，将下面的代码放入src/main.js中：</p>
+    <div class="codes">
+        <pre>
+            <code>import test from &lsquo;./test.js&rsquo;</code>
+            <code>export default function() {</code>
+            <code>    console.log(test)</code>
+            <code>}</code>
+        </pre>
+</div>
+<p>然后在test.js中，对外暴露一个变量test</p>
+    <div class="codes">
+        <pre>
+            <code>const test = 1</code>
+            <code>export default test</code>
+        </pre>
+</div>
+<p>接下来就可以进行一个简单的打包：</p>
+<p>输入指令：</p><p>rollup src/main.js –f cjs //（这里-f是必须带的，是—format的缩写，cjs是CommonJs标准，amd表示采用AMD标准，esm（或者es）为ES模块标准）</p>
+<img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-08-13/1.jpg">
+<p>可以看到，cmd直接将结果打印在了命令提示符里。我们也可以通过指令来生成一个文件：</p>
+<p>rollup src/main.js –f cjs –o dist/bundle.js //-o是—output.file的全称</p>
+<img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-08-13/2.jpg">
+<p>打开dist目录下，看到bundle.js文件，</p>
+    <div class="codes">
+        <pre>
+            <code>&lsquo;use strict&rsquo;</code>
+            <code>const test = 1</code>
+            <code>function main() {</code>
+            <code>    console.log(test)</code>
+            <code>}</code>
+            <code>module.exports = main</code>
+        </pre>
+</div>
+<p>可以看到rollup将两个文件进行了融合。</p>
+<p>在打包成功后，我们可以运行dist/bundle.js代码：</p>
+<img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-08-13/3.jpg">
+<h3>Rollup.js学习（二）</h3>
+<p>不用命令行，使用配置文件的方法</p>
+<p>当要添加更多的选项时，这种方法就显得有些麻烦。为此，可以通过用JavaScript的语法写一个rollup.config.js的文件，增加如下代码：</p>
+    <div class="codes">
+        <pre>
+            <code>export default {</code>
+            <code>    input: &lsquo;src/main.js&rsquo;,</code>
+            <code>    output:{</code>
+            <code>        file: &lsquo;./dist/index-cjs.js&rsquo;,</code>
+            <code>        format: &lsquo;cjs&rsquo;</code>
+            <code>    }</code>
+            <code>}</code>
+        </pre>
+</div>
+<p>接下来，在cmd中使用rollup –config或者rollup –c来打包</p>
+<img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-08-13/4.jpg">
+<p>打包出的文件与命令行的一样。</p>
+<p>当要输出多个文件，或者使用rollup插件的时候，必须用配置文件的方法</p>
+<h3>Rollup.js学习（三）</h3>
+<p>打包一个vue项目来练手</p>
+<p>首先新建一个文件夹，就命名为search吧，在search里建三个文件夹，分别为build，src和dist。其中build用来放置rollup.config.js文件，dist用来放打包后的文件。</p>
+<p>在/src文件夹中，新建一个.vue文件和一个index.js文件</p>
+<p>在.vue文件中，随便写点什么，然后给他一个name：test</p>
+<img src="https://fufulucky.github.io/Fupage.github.io/images/blog/2019-08-13/5.png">
+<p>在index.js中，作为项目入口，将vue文件导入</p>
+    <div class="codes">
+        <pre>
+            <code>import test from &lsquo;./test.vue&rsquo;</code>
+            <code>const myCom = {</code>
+            <code>    install: function(Vue){</code>
+            <code>        Vue.component(&lsquo;test&rsquo;,test)</code>
+            <code>    }</code>
+            <code>}</code>
+            <code>export default myCom</code>
+        </pre>
+</div>
+<p>接下来，在build中新建一个rollup.config.js文件，和前面一样，在这个文件中写清楚项目的入口和出口。另外，需要引入一些插件</p>
+    <div class="codes">
+        <pre>
+            <code>import vue from &lsquo;rollup-plugin-vue&rsquo;</code>
+            <code>import commonjs from &lsquo;rollup-plugin-commonjs&rsquo;</code>
+            <code>import buble from &lsquo;rollup-plugin-buble&rsquo;</code>
+            <code>import resolve from &lsquo;rollup-plugin-node-resolve&rsquo;</code>
+            <code>export default {</code>
+            <code>    input: &lsquo;src/index.js&rsquo;,</code>
+            <code>    output: {</code>
+            <code>        format: &lsquo;cjs&rsquo;,</code>
+            <code>        file: &lsquo;./dist/myComponent.js&rsquo;</code>
+            <code>    },</code>
+            <code>    plugins: [</code>
+            <code>        commonjs(),</code>
+            <code>        vue(),</code>
+            <code>        buble(),</code>
+            <code>        resolve()</code>
+            <code>    ]</code>
+            <code>}</code>
+        </pre>
+</div>
+<p>其中commonjs，buble，resolve都是项目所需的插件。</p>
+<p>为什么需要这些插件呢？</p>
+<p>对于commonjs来说，因为rollup.js默认不支持commonjs模块</p>
+<p>Buble可以支持ES6的新特性</p>
+<p>Resolve可以下载远程npm库</p>
+<p>接下来在命令提示符里，输入 npm init</p>
+<p>在生成的package.json中，增加一条：</p>
+    <div class="codes">
+        <pre>
+            <code>&ldquo;build&rdquo;: &ldquo;rollup &ndash;config build/rollup.config.js&rdquo;,</code>
+        </pre>
+</div>
+<p>这样就可以直接用 npm run build来执行打包语句。</p>
+<p>为了能在项目中直接引用，还需要更改一条</p>
+    <div class="codes">
+        <pre>
+            <code>  &ldquo;main&rdquo;: &ldquo;dist/searchCom.js&rdquo;,</code>
+        </pre>
+</div>
+<p>Mian里是打包项目的入口。</p>
+<p>在命令提示符里打包，输入npm run build，成功生成打包文件myCompinent.js</p>
+<p>第二部分—将打包文件发布到npm中，在别的项目里只需要npm install，再在main.js中import和Vue.use()就可以方便的使用组件了</p>
+<p>发布到npm中：</p>
+<p>1.   登录npm
+指令： npm login
+</p>
+<p>2.   检查一下package.json中的name，在npm网站上有没有重复的，如果重复就改掉。</p>
+<p>3.   发布
+指令：npm publish
+</p>
+<p>此时已经将我们的vue组件发布到npm中了。</p>
+<p>在本地文件中，如果要使用发布的这个包，首先npm install xxxxx
+然后在main.js中引用
+</p>
+    <div class="codes">
+        <pre>
+            <code>import  myCom  from &lsquo;../node_modules/rollup2.1/dist/myComponent&rsquo;</code>
+            <code>Vue.use(myCom)</code>
+        </pre>
+</div>
+<p>接下来就可以在组建中使用了</p>
+    <div class="codes">
+        <pre>
+            <code>《test》《/test》</code>
+        </pre>
+</div></p>
 
           </div>
 
@@ -328,9 +477,6 @@ Const很神奇，const定义的对象，当对象改变了之后，const定义�
 <div class="li-x div-x post-meta">
   <li class="pr-0"><a href="https://fufulucky.github.io/Fupage.github.io/tags/"><i class="fas fa-tags"></i></a></li>
   <div class="tags-sm">
-    
-      <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/js" role="button">JS </a></li>
-      
     
       <li><a href="https://fufulucky.github.io/Fupage.github.io/tags/blog" role="button">blog </a></li>
       
@@ -348,23 +494,16 @@ Const很神奇，const定义的对象，当对象改变了之后，const定义�
           <div class="row pt-3">
             <div class="col-md-6">
               
-                <a href=https://fufulucky.github.io/Fupage.github.io/blog/2019-05/vue-computed%E5%92%8Cmethods/ class="post-meta">Previous
+                <a href=https://fufulucky.github.io/Fupage.github.io/blog/2019-06/es6%E6%96%B0%E7%89%B9%E6%80%A7/ class="post-meta">Previous
                   <div class="pt-2 pb-5 d-flex">
                     <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
-                    <span>Vue Computed和methods</span>
+                    <span>ES6新特性</span>
                   </div>
                 </a>
               
             </div>
             
             <div class="col-md-6 text-right" >
-              
-                <a href=https://fufulucky.github.io/Fupage.github.io/blog/2019-08/rollup%E5%AD%A6%E4%B9%A0/ class="post-meta">Next
-                  <div class="pt-2 pb-5 flex-reverse">
-                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
-                    <span>Rollup学习</span>
-                  </div>
-                </a>
               
             </div>
           </div>

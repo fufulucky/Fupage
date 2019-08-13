@@ -6,10 +6,19 @@
     <description>Recent content in 前端 on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 25 Jun 2019 18:11:20 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 13 Aug 2019 23:14:59 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rollup学习</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-08/rollup%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Tue, 13 Aug 2019 23:14:59 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-08/rollup%E5%AD%A6%E4%B9%A0/</guid>
+      <description>h3{ color: lightseagreen; } .codes span{ color: burlywood; } Rollup.js学习（一） 一、什么是Rollup.js Rollup.js是JavaScript的模块打包器，像是vue和react等框架都是通过rollup.js进行打包的。 二、第一个Rollup.js应用 1.安装rollup.js 全局安装：npm install rollup –global 2.创建一个简单的项目 首先来创建目录：mkdir src //在当前目录下创建src文件夹，接下来在src文件夹内创建一个</description>
+    </item>
     
     <item>
       <title>ES6新特性</title>
