@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 13 Aug 2019 23:14:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 22:57:24 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>组件之间使用v Model</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/blog/2019-08/%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E4%BD%BF%E7%94%A8v-model/</link>
+      <pubDate>Wed, 14 Aug 2019 22:57:24 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/blog/2019-08/%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E4%BD%BF%E7%94%A8v-model/</guid>
+      <description>h3{ color: lightseagreen; } .codes{ color: burlywood; } #buzou{ list-style: none; } 组件之间使用v-model v-model不仅仅是作为一个input中数据绑定的一种方法，他还可以在组件中使用v-model。 而事实上，v-model只是一个语法糖，它所包含的是：value=xxxx和@input=xxxx 例如在一个父组件中（写法一）： 父组件 《aa class=&amp;ldquo;abc&amp;rdquo; v-model=&amp;lsquo;test&amp;rsquo; 》《/aa》 子组件 子组件(写法二)</description>
+    </item>
     
     <item>
       <title>Rollup学习</title>

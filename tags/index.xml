@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Yujie Fu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zn-Hans</language>
-    <lastBuildDate>Tue, 13 Aug 2019 23:14:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 22:57:24 +0800</lastBuildDate>
     
 	<atom:link href="https://fufulucky.github.io/Fupage.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>Blog</title>
       <link>https://fufulucky.github.io/Fupage.github.io/tags/blog/</link>
-      <pubDate>Tue, 13 Aug 2019 23:14:59 +0800</pubDate>
+      <pubDate>Wed, 14 Aug 2019 22:57:24 +0800</pubDate>
       
       <guid>https://fufulucky.github.io/Fupage.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ei</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/tags/ei/</link>
+      <pubDate>Wed, 14 Aug 2019 23:13:25 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/tags/ei/</guid>
       <description></description>
     </item>
     
@@ -50,7 +59,7 @@
     <item>
       <title>Paper</title>
       <link>https://fufulucky.github.io/Fupage.github.io/tags/paper/</link>
-      <pubDate>Thu, 09 May 2019 14:40:04 +0800</pubDate>
+      <pubDate>Wed, 14 Aug 2019 23:13:25 +0800</pubDate>
       
       <guid>https://fufulucky.github.io/Fupage.github.io/tags/paper/</guid>
       <description></description>
@@ -68,7 +77,7 @@
     <item>
       <title>Vue</title>
       <link>https://fufulucky.github.io/Fupage.github.io/tags/vue/</link>
-      <pubDate>Mon, 27 May 2019 22:29:43 +0800</pubDate>
+      <pubDate>Wed, 14 Aug 2019 22:57:24 +0800</pubDate>
       
       <guid>https://fufulucky.github.io/Fupage.github.io/tags/vue/</guid>
       <description></description>

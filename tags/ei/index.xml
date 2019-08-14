@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ei on Yujie Fu</title>
+    <link>https://fufulucky.github.io/Fupage.github.io/tags/ei/</link>
+    <description>Recent content in Ei on Yujie Fu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zn-Hans</language>
+    <lastBuildDate>Wed, 14 Aug 2019 23:13:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://fufulucky.github.io/Fupage.github.io/tags/ei/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Novel Reversible Data Hiding Scheme for Encrypted VQ-Compressed Image</title>
+      <link>https://fufulucky.github.io/Fupage.github.io/paper/%E7%AC%AC%E4%BA%8C%E7%AF%87paper/</link>
+      <pubDate>Wed, 14 Aug 2019 23:13:25 +0800</pubDate>
+      
+      <guid>https://fufulucky.github.io/Fupage.github.io/paper/%E7%AC%AC%E4%BA%8C%E7%AF%87paper/</guid>
+      <description>#down{ width:20px; height:20px; } #topic{ color:#33ccff; word-spacing:nowrap; } #topic #T{ color:black; } A Novel Reversible Data Hiding Scheme for Encrypted VQ-Compressed Image Yujie Fu, Dongsheng Peng, Heng Yao, Chuan Qin International Conference on Artificial Intelligence and Security ICAIS 2019: Artificial Intelligence and Security pp 150-160 Abstract: VQ-compressed images have been widely used as an important branch of multimedia, however, there are few reversible data hiding schemes based on VQ-compressed image in encrypted domain. In this paper, a reversible data hiding scheme based on encrypted VQ-compressed image is proposed. On the content owner side, codebook is supposed to be reorganized firstly, and codewords in codebook are then grouped into codeword pair after reorganization. After this process, index table and the new codebook are encrypted separately, using modulo operation to encrypt index table and stream cipher to encrypt codebook. Additional data will be embedded in specific position of index table by modifying their index value. As to the receiver, encrypted index table with addition data and encrypted codebook are decrypted by the encryption key. The additional data can be extracted and image can be recovered effectively according to spatial correlation in natural image. Topic: Reversible data hiding, Image encryption Published in: Lecture</description>
+    </item>
+    
+  </channel>
+</rss>
